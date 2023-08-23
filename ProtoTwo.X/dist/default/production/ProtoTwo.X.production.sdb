@@ -1,0 +1,214 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"1 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"15 C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"10 C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+[v _PPS_init PPS_init `(v  1 e 1 0 ]
+"29
+[v _port_init port_init `(v  1 e 1 0 ]
+"38
+[v _spi_init spi_init `(v  1 e 1 0 ]
+"56
+[v _cs_low cs_low `(v  1 e 1 0 ]
+"61
+[v _cs_high cs_high `(v  1 e 1 0 ]
+"66
+[v _dc_low dc_low `(v  1 e 1 0 ]
+"71
+[v _dc_high dc_high `(v  1 e 1 0 ]
+"76
+[v _rst_high rst_high `(v  1 e 1 0 ]
+"81
+[v _rst_low rst_low `(v  1 e 1 0 ]
+"86
+[v _spi_write spi_write `(v  1 e 1 0 ]
+"19 C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+[v _write_command write_command `(v  1 e 1 0 ]
+"28
+[v _write_data write_data `(v  1 e 1 0 ]
+"36
+[v _Rcmd1 Rcmd1 `(v  1 e 1 0 ]
+"79
+[v _Rcmd2red Rcmd2red `(v  1 e 1 0 ]
+"88
+[v _Rcmd3 Rcmd3 `(v  1 e 1 0 ]
+"105
+[v _TFT_ResetPIN TFT_ResetPIN `(v  1 e 1 0 ]
+"125
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+"139
+[v _fillRectangle fillRectangle `(v  1 e 1 0 ]
+"164
+[v _drawFastHLine drawFastHLine `(v  1 e 1 0 ]
+"181
+[v _drawFastVLine drawFastVLine `(v  1 e 1 0 ]
+"198
+[v _fillRect fillRect `(v  1 e 1 0 ]
+"205
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+"241
+[v _drawCircleHelper drawCircleHelper `(v  1 e 1 0 ]
+"272
+[v _fillCircleHelper fillCircleHelper `(v  1 e 1 0 ]
+"308
+[v _drawLine drawLine `(v  1 e 1 0 ]
+"423
+[v _drawChar drawChar `(v  1 e 1 0 ]
+"147 C:\Users\Malone\Documents\PIC\ProtoTwo.X/ST7735.h
+[v _Font Font `C[475]uc  1 e 475 0 ]
+"7217 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f47k42.h
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @14867 ]
+"7317
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
+"9225
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"10698
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @15039 ]
+[s S385 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"10708
+[u S387 . 1 `S385 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES387  1 e 1 @15039 ]
+"22102
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @15633 ]
+"22219
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
+[s S396 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"22240
+[s S402 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S408 . 1 `S396 1 . 1 0 `S402 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES408  1 e 1 @15636 ]
+"22285
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
+"22387
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @15638 ]
+"22465
+[v _SPI1STATUS SPI1STATUS `VEuc  1 e 1 @15639 ]
+"22587
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @15641 ]
+"22657
+[v _SPI1INTF SPI1INTF `VEuc  1 e 1 @15642 ]
+"22749
+[v _SPI1INTE SPI1INTE `VEuc  1 e 1 @15643 ]
+"22841
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @15644 ]
+"45043
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+[s S45 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"45182
+[s S54 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+"45182
+[u S63 . 1 `S45 1 . 1 0 `S54 1 . 1 0 ]
+"45182
+"45182
+[v _LATDbits LATDbits `VES63  1 e 1 @16317 ]
+"45443
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S24 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"45522
+[u S33 . 1 `S24 1 . 1 0 ]
+"45522
+"45522
+[v _TRISDbits TRISDbits `VES33  1 e 1 @16325 ]
+"10 C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+[v __wrap _wrap `a  1 e 1 0 ]
+"11
+[v __tft_type _tft_type `uc  1 e 1 0 ]
+"15 C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"39
+} 0
+"86 C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+[v _spi_write spi_write `(v  1 e 1 0 ]
+{
+[v spi_write@data data `uc  1 a 1 wreg ]
+[v spi_write@data data `uc  1 a 1 wreg ]
+"88
+[v spi_write@data data `uc  1 a 1 0 ]
+"91
+} 0
+"38
+[v _spi_init spi_init `(v  1 e 1 0 ]
+{
+"54
+} 0
+"29
+[v _port_init port_init `(v  1 e 1 0 ]
+{
+"36
+} 0
+"10
+[v _PPS_init PPS_init `(v  1 e 1 0 ]
+{
+"27
+} 0

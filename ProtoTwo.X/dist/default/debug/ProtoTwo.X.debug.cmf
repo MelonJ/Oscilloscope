@@ -1,0 +1,731 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+idloc IDLOC 5 200000 200000 10 1 1
+init CODE 0 1FFFC 1FFFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 A 1 1
+$dist/default/debug\ProtoTwo.X.debug.o
+cinit CODE 0 1041A 1041A 3A 1 2
+idloc IDLOC 5 200000 200000 10 1 1
+text0 CODE 0 10454 10454 32 1 2
+text1 CODE 0 10486 10486 26 1 2
+text2 CODE 0 10528 10528 10 1 2
+text3 CODE 0 10538 10538 10 1 2
+text4 CODE 0 104AC 104AC 1C 1 2
+text5 CODE 0 1013A 1013A 11A 1 2
+text6 CODE 0 10354 10354 46 1 2
+text7 CODE 0 104C8 104C8 1A 1 2
+text8 CODE 0 1039A 1039A 42 1 2
+text9 CODE 0 10548 10548 4 1 2
+text10 CODE 0 1054C 1054C 4 1 2
+text11 CODE 0 10254 10254 100 1 2
+text12 CODE 0 103DC 103DC 3E 1 2
+text13 CODE 0 10000 10000 13A 1 2
+text14 CODE 0 104FC 104FC 16 1 2
+text15 CODE 0 10550 10550 4 1 2
+text16 CODE 0 10512 10512 16 1 2
+text17 CODE 0 104E2 104E2 1A 1 2
+text18 CODE 0 10554 10554 4 1 2
+text19 CODE 0 10558 10558 4 1 2
+text20 CODE 0 1055C 1055C 4 1 2
+idataCOMRAM CODE 0 10560 10560 3 1 1
+cstackCOMRAM COMRAM 1 1 1 14 1 1
+dataCOMRAM COMRAM 1 1B 1B 3 1 1
+bssCOMRAM COMRAM 1 15 15 6 1 1
+mediumconst MEDIUMCONST 0 FE22 FE22 1DE 1 2
+config CONFIG 4 300000 300000 A 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-1FFF 1
+SFR 3800-3FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-FE21 1
+CONST 10563-1FFFB 1
+SMALLCONST 2000-FE21 1
+SMALLCONST 10563-1FFFB 1
+CODE 4-FE21 1
+CODE 10563-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BIGRAM 1E-1FFF 1
+BIGSFR 3800-3FFF 1
+COMRAM 1E-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 2000-FE21 1
+MEDIUMCONST 12000-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\ProtoTwo.X.debug.o
+1055C text20 CODE >50:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1055C text20 CODE >52:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1055E text20 CODE >53:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10558 text19 CODE >45:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10558 text19 CODE >47:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1055A text19 CODE >48:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10554 text18 CODE >55:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10554 text18 CODE >57:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10556 text18 CODE >58:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104E2 text17 CODE >75:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104E4 text17 CODE >77:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104EA text17 CODE >78:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104EA text17 CODE >79:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104FA text17 CODE >80:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10512 text16 CODE >19:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10514 text16 CODE >21:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10518 text16 CODE >22:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1051C text16 CODE >23:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10522 text16 CODE >24:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10526 text16 CODE >25:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10550 text15 CODE >60:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10550 text15 CODE >62:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10552 text15 CODE >63:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104FC text14 CODE >28:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104FE text14 CODE >30:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10502 text14 CODE >31:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10506 text14 CODE >32:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1050C text14 CODE >33:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10510 text14 CODE >34:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10000 text13 CODE >36:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10000 text13 CODE >37:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10006 text13 CODE >38:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1001C text13 CODE >39:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10022 text13 CODE >40:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10038 text13 CODE >41:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1004E text13 CODE >42:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10054 text13 CODE >43:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1005A text13 CODE >44:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10060 text13 CODE >45:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10066 text13 CODE >46:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1006C text13 CODE >47:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10072 text13 CODE >48:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10078 text13 CODE >49:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1007E text13 CODE >50:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10084 text13 CODE >51:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10096 text13 CODE >52:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100A8 text13 CODE >53:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100AE text13 CODE >54:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100B4 text13 CODE >55:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100BA text13 CODE >56:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100C0 text13 CODE >57:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100C6 text13 CODE >58:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100CC text13 CODE >59:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100D2 text13 CODE >60:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100D8 text13 CODE >61:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100DE text13 CODE >62:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100E4 text13 CODE >63:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100EA text13 CODE >64:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100F0 text13 CODE >65:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100F6 text13 CODE >66:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+100FC text13 CODE >67:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10102 text13 CODE >68:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10108 text13 CODE >69:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1010E text13 CODE >70:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10114 text13 CODE >71:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1011A text13 CODE >72:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10120 text13 CODE >73:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10126 text13 CODE >74:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1012C text13 CODE >75:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10132 text13 CODE >76:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10138 text13 CODE >77:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103DC text12 CODE >79:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103DC text12 CODE >80:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103E2 text12 CODE >81:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103EE text12 CODE >82:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103FA text12 CODE >83:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10400 text12 CODE >84:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1040C text12 CODE >85:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10418 text12 CODE >86:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10254 text11 CODE >88:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10254 text11 CODE >89:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1025A text11 CODE >90:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10272 text11 CODE >91:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1028A text11 CODE >92:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+102A2 text11 CODE >93:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+102BA text11 CODE >94:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+102C0 text11 CODE >95:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+102D8 text11 CODE >96:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+102F0 text11 CODE >97:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10308 text11 CODE >98:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10320 text11 CODE >99:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10326 text11 CODE >100:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10336 text11 CODE >101:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1033C text11 CODE >102:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10352 text11 CODE >103:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1054C text10 CODE >65:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1054C text10 CODE >67:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1054E text10 CODE >68:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10548 text9 CODE >70:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10548 text9 CODE >72:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1054A text9 CODE >73:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1039A text8 CODE >105:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1039A text8 CODE >106:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1039E text8 CODE >107:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103A2 text8 CODE >108:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103B2 text8 CODE >109:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103B6 text8 CODE >110:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103C6 text8 CODE >111:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103CA text8 CODE >112:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+103DA text8 CODE >113:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104C8 text7 CODE >115:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104C8 text7 CODE >117:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104CC text7 CODE >118:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104D0 text7 CODE >119:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104D4 text7 CODE >120:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104D8 text7 CODE >121:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104DC text7 CODE >122:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104E0 text7 CODE >123:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10354 text6 CODE >125:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10356 text6 CODE >126:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1035C text6 CODE >127:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10362 text6 CODE >128:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10368 text6 CODE >129:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1036E text6 CODE >130:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10374 text6 CODE >131:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1037A text6 CODE >132:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10380 text6 CODE >133:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10386 text6 CODE >134:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1038C text6 CODE >135:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10392 text6 CODE >136:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10398 text6 CODE >137:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1013A text5 CODE >139:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1013C text5 CODE >141:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10160 text5 CODE >143:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10196 text5 CODE >144:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1019C text5 CODE >145:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+101D2 text5 CODE >146:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+101D8 text5 CODE >147:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+101F6 text5 CODE >148:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+101FE text5 CODE >149:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10202 text5 CODE >150:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10206 text5 CODE >151:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1021E text5 CODE >152:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10236 text5 CODE >153:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1023C text5 CODE >154:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10242 text5 CODE >155:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10248 text5 CODE >156:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+1024E text5 CODE >157:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10252 text5 CODE >158:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104AC text4 CODE >160:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104AC text4 CODE >161:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+104C6 text4 CODE >162:C:\Users\Malone\Documents\PIC\ProtoTwo.X\ST7735.c
+10538 text3 CODE >10:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10538 text3 CODE >12:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1053E text3 CODE >13:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10542 text3 CODE >14:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10546 text3 CODE >17:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10528 text2 CODE >19:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10528 text2 CODE >21:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1052A text2 CODE >22:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1052E text2 CODE >24:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10532 text2 CODE >25:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10536 text2 CODE >26:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10486 text1 CODE >28:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10486 text1 CODE >30:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1048A text1 CODE >31:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1048E text1 CODE >32:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10492 text1 CODE >34:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10496 text1 CODE >35:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10498 text1 CODE >36:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+1049C text1 CODE >37:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104A0 text1 CODE >38:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104A4 text1 CODE >39:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104A6 text1 CODE >40:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104A8 text1 CODE >41:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+104AA text1 CODE >43:C:\Users\Malone\Documents\PIC\ProtoTwo.X\spi.c
+10454 text0 CODE >15:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+10454 text0 CODE >17:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1045A text0 CODE >18:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1045E text0 CODE >19:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+10462 text0 CODE >20:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+10466 text0 CODE >21:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1046C text0 CODE >23:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+10470 text0 CODE >24:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+10474 text0 CODE >25:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1047E text0 CODE >27:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1047E text0 CODE >31:C:\Users\Malone\Documents\PIC\ProtoTwo.X\main.c
+1041A cinit CODE >5134:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1041A cinit CODE >5136:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1041A cinit CODE >5139:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1041A cinit CODE >5190:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1041C cinit CODE >5191:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1041E cinit CODE >5192:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10420 cinit CODE >5193:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10422 cinit CODE >5194:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10424 cinit CODE >5195:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10426 cinit CODE >5196:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10428 cinit CODE >5197:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1042E cinit CODE >5198:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10430 cinit CODE >5199:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10436 cinit CODE >5200:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10438 cinit CODE >5201:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1043E cinit CODE >5205:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10440 cinit CODE >5206:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10442 cinit CODE >5207:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10444 cinit CODE >5208:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10446 cinit CODE >5209:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10448 cinit CODE >5210:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1044A cinit CODE >5216:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1044A cinit CODE >5219:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1044C cinit CODE >5220:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+1044E cinit CODE >5221:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+10450 cinit CODE >5222:C:\Users\Malone\AppData\Local\Temp\xcAst04.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_cs_high 1055C 0 CODE 0 text20 dist/default/debug\ProtoTwo.X.debug.o
+_SPI1STATUS 3D17 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lmediumconst FE22 0 MEDIUMCONST 0 mediumconst dist/default/debug\ProtoTwo.X.debug.o
+__Hspace_0 20000 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hspace_1 1E 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hspace_4 60000A 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_TFT_RedTab_Initialize 104C8 0 CODE 0 text7 dist/default/debug\ProtoTwo.X.debug.o
+_CLKRCLK 3CE6 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__end_of_write_data 10512 0 CODE 0 text14 dist/default/debug\ProtoTwo.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\ProtoTwo.X.debug.o
+__mediumconst FE22 0 MEDIUMCONST 0 mediumconst C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\ProtoTwo.X.debug.o
+_rst_high 1054C 0 CODE 0 text10 dist/default/debug\ProtoTwo.X.debug.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\ProtoTwo.X.debug.o
+_Font FE23 0 MEDIUMCONST 0 mediumconst dist/default/debug\ProtoTwo.X.debug.o
+_LATC 3FBC 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+_main 10454 0 CODE 0 text0 dist/default/debug\ProtoTwo.X.debug.o
+start 1FFFC 0 CODE 0 init C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__end_of_rst_high 10550 0 CODE 0 text10 dist/default/debug\ProtoTwo.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_fillRectangle 1013A 0 CODE 0 text5 dist/default/debug\ProtoTwo.X.debug.o
+_TFT_ResetPIN 1039A 0 CODE 0 text8 dist/default/debug\ProtoTwo.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\ProtoTwo.X.debug.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+intlevel0 0 0 CODE 0 text C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+intlevel1 0 0 CODE 0 text C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+intlevel2 0 0 CODE 0 text C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+intlevel3 0 0 CODE 0 text C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\ProtoTwo.X.debug.o
+__end_of_rst_low 1054C 0 CODE 0 text9 dist/default/debug\ProtoTwo.X.debug.o
+_dc_high 10550 0 CODE 0 text15 dist/default/debug\ProtoTwo.X.debug.o
+fillScreen@color 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\ProtoTwo.X.debug.o
+setAddrWindow@x0 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+setAddrWindow@x1 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+setAddrWindow@y0 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+setAddrWindow@y1 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\ProtoTwo.X.debug.o
+__pidataCOMRAM 10560 0 CODE 0 idataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+write_command@cmd 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_SPI1CON0bits 3D14 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_ANSELA 3A40 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_ANSELC 3A60 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\ProtoTwo.X.debug.o
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/debug\ProtoTwo.X.debug.o
+__end_of_TFT_ResetPIN 103DC 0 CODE 0 text8 dist/default/debug\ProtoTwo.X.debug.o
+_tft_height 1B 0 COMRAM 1 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__end_of_cs_low 1055C 0 CODE 0 text19 dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@hi 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@lo 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__end_of_dc_low 10558 0 CODE 0 text18 dist/default/debug\ProtoTwo.X.debug.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+start_initialization 1041A 0 CODE 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+_OSCFRQ 39DF 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\ProtoTwo.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_RA1PPS 3A01 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_RC3PPS 3A13 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_RC5PPS 3A15 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_setAddrWindow 10354 0 CODE 0 text6 dist/default/debug\ProtoTwo.X.debug.o
+__end_of_fillRectangle 10254 0 CODE 0 text5 dist/default/debug\ProtoTwo.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+_tft_width 1C 0 COMRAM 1 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/debug\ProtoTwo.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\ProtoTwo.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\ProtoTwo.X.debug.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/default/debug\ProtoTwo.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\ProtoTwo.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\ProtoTwo.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\ProtoTwo.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\ProtoTwo.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\ProtoTwo.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\ProtoTwo.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\ProtoTwo.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\ProtoTwo.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\ProtoTwo.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\ProtoTwo.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/default/debug\ProtoTwo.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\ProtoTwo.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\ProtoTwo.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/debug\ProtoTwo.X.debug.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/debug\ProtoTwo.X.debug.o
+__end_of_port_init 10538 0 CODE 0 text2 dist/default/debug\ProtoTwo.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\ProtoTwo.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\ProtoTwo.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\ProtoTwo.X.debug.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+spi_write@data 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\ProtoTwo.X.debug.o
+__Hconfig 30000A 0 CONFIG 4 config dist/default/debug\ProtoTwo.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/debug\ProtoTwo.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\ProtoTwo.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\ProtoTwo.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/debug\ProtoTwo.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\ProtoTwo.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\ProtoTwo.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\ProtoTwo.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\ProtoTwo.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\ProtoTwo.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\ProtoTwo.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\ProtoTwo.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\ProtoTwo.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/default/debug\ProtoTwo.X.debug.o
+__Hinit 20000 0 CODE 0 init dist/default/debug\ProtoTwo.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\ProtoTwo.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\ProtoTwo.X.debug.o
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\ProtoTwo.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\ProtoTwo.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\ProtoTwo.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\ProtoTwo.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/default/debug\ProtoTwo.X.debug.o
+__Linit 1FFFC 0 CODE 0 init dist/default/debug\ProtoTwo.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\ProtoTwo.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\ProtoTwo.X.debug.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\ProtoTwo.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\ProtoTwo.X.debug.o
+_port_init 10528 0 CODE 0 text2 dist/default/debug\ProtoTwo.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\ProtoTwo.X.debug.o
+__S0 20000 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__S1 1E 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__S4 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__S5 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1BAUD 3D19 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1CON0 3D14 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1CON1 3D15 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1CON2 3D16 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1INTE 3D1B 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1INTF 3D1A 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_cs_low 10558 0 CODE 0 text19 dist/default/debug\ProtoTwo.X.debug.o
+_rst_low 10548 0 CODE 0 text9 dist/default/debug\ProtoTwo.X.debug.o
+_dc_low 10554 0 CODE 0 text18 dist/default/debug\ProtoTwo.X.debug.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\ProtoTwo.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\ProtoTwo.X.debug.o
+write_data@data 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hramtop 2000 0 RAM 0 ramtop dist/default/debug\ProtoTwo.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\ProtoTwo.X.debug.o
+__activetblptr 2 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\ProtoTwo.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\ProtoTwo.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\ProtoTwo.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\ProtoTwo.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\ProtoTwo.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/default/debug\ProtoTwo.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\ProtoTwo.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\ProtoTwo.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\ProtoTwo.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\ProtoTwo.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\ProtoTwo.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/default/debug\ProtoTwo.X.debug.o
+__rotation 17 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__ptext10 1054C 0 CODE 0 text10 dist/default/debug\ProtoTwo.X.debug.o
+__ptext11 10254 0 CODE 0 text11 dist/default/debug\ProtoTwo.X.debug.o
+__ptext12 103DC 0 CODE 0 text12 dist/default/debug\ProtoTwo.X.debug.o
+__ptext13 10000 0 CODE 0 text13 dist/default/debug\ProtoTwo.X.debug.o
+__ptext14 104FC 0 CODE 0 text14 dist/default/debug\ProtoTwo.X.debug.o
+__ptext15 10550 0 CODE 0 text15 dist/default/debug\ProtoTwo.X.debug.o
+__ptext16 10512 0 CODE 0 text16 dist/default/debug\ProtoTwo.X.debug.o
+__ptext17 104E2 0 CODE 0 text17 dist/default/debug\ProtoTwo.X.debug.o
+__ptext18 10554 0 CODE 0 text18 dist/default/debug\ProtoTwo.X.debug.o
+__ptext19 10558 0 CODE 0 text19 dist/default/debug\ProtoTwo.X.debug.o
+__ptext20 1055C 0 CODE 0 text20 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/debug\ProtoTwo.X.debug.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/debug\ProtoTwo.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\ProtoTwo.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\ProtoTwo.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\ProtoTwo.X.debug.o
+__end_of_setAddrWindow 1039A 0 CODE 0 text6 dist/default/debug\ProtoTwo.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\ProtoTwo.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/default/debug\ProtoTwo.X.debug.o
+__end_of_cs_high 10560 0 CODE 0 text20 dist/default/debug\ProtoTwo.X.debug.o
+__rowstart 19 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_Rcmd2red 103DC 0 CODE 0 text12 dist/default/debug\ProtoTwo.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\ProtoTwo.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\ProtoTwo.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__end_of_Rcmd2red 1041A 0 CODE 0 text12 dist/default/debug\ProtoTwo.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+stacklo 0 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+_OSCCON3 39DB 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_OSCTUNE 39DE 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\ProtoTwo.X.debug.o
+__colstart 1A 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_write_command 10512 0 CODE 0 text16 dist/default/debug\ProtoTwo.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@h 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@w 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@x 12 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@y 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__pbssCOMRAM 15 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_fillScreen 104AC 0 CODE 0 text4 dist/default/debug\ProtoTwo.X.debug.o
+end_of_initialization 1044A 0 CODE 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\ProtoTwo.X.debug.o
+__tft_type 18 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\ProtoTwo.X.debug.o
+fillRectangle@color A 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Lramtop 2000 0 RAM 0 ramtop dist/default/debug\ProtoTwo.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\ProtoTwo.X.debug.o
+__pcinit 1041A 0 CODE 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+__ptext0 10454 0 CODE 0 text0 dist/default/debug\ProtoTwo.X.debug.o
+__ptext1 10486 0 CODE 0 text1 dist/default/debug\ProtoTwo.X.debug.o
+__ptext2 10528 0 CODE 0 text2 dist/default/debug\ProtoTwo.X.debug.o
+__ptext3 10538 0 CODE 0 text3 dist/default/debug\ProtoTwo.X.debug.o
+__ptext4 104AC 0 CODE 0 text4 dist/default/debug\ProtoTwo.X.debug.o
+__ptext5 1013A 0 CODE 0 text5 dist/default/debug\ProtoTwo.X.debug.o
+__ptext6 10354 0 CODE 0 text6 dist/default/debug\ProtoTwo.X.debug.o
+__ptext7 104C8 0 CODE 0 text7 dist/default/debug\ProtoTwo.X.debug.o
+__ptext8 1039A 0 CODE 0 text8 dist/default/debug\ProtoTwo.X.debug.o
+__ptext9 10548 0 CODE 0 text9 dist/default/debug\ProtoTwo.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\ProtoTwo.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\ProtoTwo.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\ProtoTwo.X.debug.o
+__ramtop 2000 0 RAM 0 ramtop C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+__end_of_dc_high 10554 0 CODE 0 text15 dist/default/debug\ProtoTwo.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\ProtoTwo.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\ProtoTwo.X.debug.o
+__end_of_spi_write 104FC 0 CODE 0 text17 dist/default/debug\ProtoTwo.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\ProtoTwo.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+___heap_lo 0 0 ABS 0 - C:\Users\Malone\AppData\Local\Temp\xcAst04.o
+___param_bank 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\ProtoTwo.X.debug.o
+__end_of__initialization 1044A 0 CODE 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+_PPS_init 10538 0 CODE 0 text3 dist/default/debug\ProtoTwo.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\ProtoTwo.X.debug.o
+__xstart 16 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__ystart 15 0 COMRAM 1 bssCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\ProtoTwo.X.debug.o
+__end_of_fillScreen 104C8 0 CODE 0 text4 dist/default/debug\ProtoTwo.X.debug.o
+_SPI1CLK 3D1C 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_SPI1TXB 3D11 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__end_of_PPS_init 10548 0 CODE 0 text3 dist/default/debug\ProtoTwo.X.debug.o
+_spi_write 104E2 0 CODE 0 text17 dist/default/debug\ProtoTwo.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+_write_data 104FC 0 CODE 0 text14 dist/default/debug\ProtoTwo.X.debug.o
+__pmediumconst FE22 0 MEDIUMCONST 0 mediumconst dist/default/debug\ProtoTwo.X.debug.o
+__end_of_Font FFFE 0 MEDIUMCONST 0 mediumconst dist/default/debug\ProtoTwo.X.debug.o
+__end_of_main 10486 0 CODE 0 text0 dist/default/debug\ProtoTwo.X.debug.o
+__end_of_Rcmd1 1013A 0 CODE 0 text13 dist/default/debug\ProtoTwo.X.debug.o
+__end_of_Rcmd3 10354 0 CODE 0 text11 dist/default/debug\ProtoTwo.X.debug.o
+_OSCEN 39DD 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_Rcmd1 10000 0 CODE 0 text13 dist/default/debug\ProtoTwo.X.debug.o
+_Rcmd3 10254 0 CODE 0 text11 dist/default/debug\ProtoTwo.X.debug.o
+_TRISA 3FC2 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+_TRISC 3FC4 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\ProtoTwo.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\ProtoTwo.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\ProtoTwo.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\ProtoTwo.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\ProtoTwo.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\ProtoTwo.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\ProtoTwo.X.debug.o
+__wrap 1D 0 COMRAM 1 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__initialization 1041A 0 CODE 0 cinit dist/default/debug\ProtoTwo.X.debug.o
+__pdataCOMRAM 1B 0 COMRAM 1 dataCOMRAM dist/default/debug\ProtoTwo.X.debug.o
+__end_of_TFT_RedTab_Initialize 104E2 0 CODE 0 text7 dist/default/debug\ProtoTwo.X.debug.o
+_spi_init 10486 0 CODE 0 text1 dist/default/debug\ProtoTwo.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\ProtoTwo.X.debug.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\ProtoTwo.X.debug.o
+__end_of_write_command 10528 0 CODE 0 text16 dist/default/debug\ProtoTwo.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\ProtoTwo.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\ProtoTwo.X.debug.o
+__end_of_spi_init 104AC 0 CODE 0 text1 dist/default/debug\ProtoTwo.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text13 0 10000 10000 563 1
+cstackCOMRAM 1 1 1 1D 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+mediumconst 0 FE22 FE22 1DE 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
